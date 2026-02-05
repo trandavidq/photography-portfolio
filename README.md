@@ -1,25 +1,62 @@
+<<<<<<< HEAD
 # Claude-Code-Experiment
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+=======
+# Photography Portfolio Website
+
+A modern photography portfolio built with Next.js 16, featuring AWS integration for image storage, DynamoDB for data management, and email-based authentication.
+
+## Features
+
+- 📸 Gallery management system
+- 🖼️ Image upload with automatic optimization (original, optimized, thumbnail)
+- ☁️ AWS S3 storage with CloudFront CDN
+- 🗄️ DynamoDB database
+- 🔐 2FA email authentication via AWS SES
+- 🎨 Clean, minimal design with dark mode support
+- ⚡ Built with Next.js 16 and Turbopack
+>>>>>>> 2bdb661 (Document local dev setup)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- npm or yarn
+- AWS account (for production features)
+
+### Installation
+
+1. Clone the repository and install dependencies:
+
+```bash
+npm install
+```
+
+2. Set up environment variables:
+
+```bash
+cp .env.example .env.local
+```
+
+3. Edit `.env.local` and add your AWS credentials (optional for local development):
+
+```bash
+# For local development, the app will run with placeholder values
+# Add real AWS credentials when you're ready to test cloud features
+```
+
+### Running Locally
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The app will run locally even without AWS credentials configured. To use cloud features (image upload, galleries, authentication), you'll need to configure AWS services.
 
 ## Learn More
 
