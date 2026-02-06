@@ -6,8 +6,8 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Required for static export
   },
   // For GitHub Pages with custom repository name
-  basePath: '/Claude-Code-Experiment',
-  assetPrefix: '/Claude-Code-Experiment',
+  basePath: '/photography-portfolio',
+  assetPrefix: '/photography-portfolio',
 };
 
 export default nextConfig;
